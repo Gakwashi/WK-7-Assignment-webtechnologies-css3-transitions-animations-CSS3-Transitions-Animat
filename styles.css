@@ -1,0 +1,26 @@
+body {
+  text-align: center;
+  margin-top: 50px;
+  font-family: sans-serif;
+}
+
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  margin: 20px auto;
+  border: 2px solid black; /* Helps you see it clearly */
+}
+
+
+/* Keyframe animation */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-100px); }
+  100% { transform: translateY(0); }
+}
+
+/* This class triggers the animation */
+.bounce {
+  animation: bounce 0.6s ease-in-out;
+}
